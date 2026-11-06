@@ -30,3 +30,6 @@ def delete_item(item_id: int):
 @app.put("/update/{item_id}")
 def update_item(item_id: int, name: str):
     return {"message": f"Item {item_id} updated successfully", "new_name": name}
+@app.post("/subtract")
+def subtract_numbers(a: int, b: int):
+    return {"result a-b=": a - b, "developer": "Ahmed"}
