@@ -63,3 +63,15 @@ Click on `GET /`, then click **Try it out** and **Execute** to test the endpoint
 ├── main.py
 └── README.md
 ```
+# TP3 - Intégration Continue
+
+## Travail réalisé
+- **Nouvelle fonctionnalité** : Ajout de l'endpoint `/subtract` pour effectuer des soustractions.
+- **Tests Unitaires** : Création du fichier `test_main.py` contenant 8 tests avec `pytest`.
+- **Couverture du code (Coverage)** : Plus de 90% du code est couvert par les tests.
+- **Qualité du code** : Le code a été analysé et amélioré avec `Pylint`.
+- **CI/CD** : Mise en place d'un pipeline GitHub Actions (`.github/workflows/ci.yml`) qui :
+  - Lance Pylint.
+  - Lance les tests pytest avec le rapport de couverture.
+  - Génère un rapport JUnit XML.
+  - Sauvegarde le rapport XML en tant qu'artefact téléchargeable.
